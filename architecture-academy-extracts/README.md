@@ -15,7 +15,7 @@ Before using the scripts, ensure that you have the following:
 1. **Run the Script**:
    - Execute the `url_to_json_file.py` script:
      ```bash
-     python save_json.py
+     python url_to_json_file.py
      ```
 
 2. **Provide the Google Slides URL**:

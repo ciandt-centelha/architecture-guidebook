@@ -61,12 +61,12 @@ def parse_table(md_file, table):
     # Add table to markdown
     md_file.new_table(columns=num_columns, rows=len(rows), text=table_data, text_align='center')
 
-def parse_paragraph_marker(paragraph_marker, nesting_level=0):
+def parse_paragraph_marker(paragraph_marker):
     """Parse paragraph markers to detect and format lists."""
     bullet_prefix = ""
     if 'bullet' in paragraph_marker:
         # Determine bullet prefix based on nesting level
-        bullet_prefix = "  " * nesting_level + "- "
+        bullet_prefix = "  " + "- "
     return bullet_prefix
 
 # Process each .json file in the input directory
